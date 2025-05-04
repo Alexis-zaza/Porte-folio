@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 85vh;
+  width:100%;
+  animation: changeImage 25s infinite;
+}
+
+@keyframes changeImage{
+  0%{
+    background-image: url('first.jpg');
+  }
+  33%{
+    background-image: url('cor.jpg');
+  }
+ 66%{background-image: url('corps.jpg');
+  }
+ 100%{
+    background-image: url('cop.jpg');
+   
+  }
+}
+img{
+  border-radius: 100px;
+  width:8%;
+  height: 6%;
+  border: none;
+}
+.titre{
+  align-items: center;
+  display: flex;
+  margin-left: 2%;
+  margin-top: 0.5%;
+}
+h2{
+  font-size: 2.8rem;
+  margin-left: 3%;
+  color: brown;
+}
+h3{
+  font-size: 2rem;
+  width: 90%;
+  margin-left: 1%;
+  gap: 3%;
+  color: #eff;
+  margin-top: 10%;
+  animation: changeColor 25s infinite;
+}
+@keyframes changeColor{
+  0%{
+    color:#eff;
+  }
+  33%{
+  color:#eff  ;
+  }
+  50%{
+    color:#eff;
+  }
+ 100%{
+    color: #6D33A8;
+  }
+}
+a{
+  animation: changeColor 25s infinite;
+}
+li{
+  
+  font-size: 1.1rem;
+  margin-left: 10%;
+}
+p{
+  margin-left: 2px;
+  margin-top: 15%;
+  font-size: 1.5rem;
+  animation: changeColor 25s infinite;
+}
+@media(max-width:768px){
+ h2{
+   font-size:14px;
+ }
+  p{
+    font-size: 10px;
+  }
+  h3{
+    font-size: 10px;
+  }
+  li{
+    font-size: 5px;
+  }
